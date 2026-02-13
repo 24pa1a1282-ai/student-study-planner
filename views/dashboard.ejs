@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Study Planner</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <h1>📚 Study Planner Dashboard</h1>
+            <div class="user-info">
+                <span>Welcome, <strong><%= user.name %></strong>!</span>
+                <a href="/auth/logout" class="btn-logout">Logout</a>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <h2>Your Study Stats</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <h3>Total Study Hours</h3>
+                    <p class="stat-number">0</p>
+                    <span class="stat-label">hours</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🔥</div>
+                    <h3>Study Streak</h3>
+                    <p class="stat-number">0</p>
+                    <span class="stat-label">days</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <h3>Goals Completed</h3>
+                    <p class="stat-number">0</p>
+                    <span class="stat-label">goals</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <h3>This Week</h3>
+                    <p class="stat-number">0</p>
+                    <span class="stat-label">hours</span>
+                </div>
+            </div>
+
+            <div class="study-section">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="action-btn">➕ Add Study Session</button>
+                    <button class="action-btn">🎯 Set New Goal</button>
+                    <button class="action-btn">📈 View Progress</button>
+                </div>
+            </div>
+
+            <div class="motivation-quote">
+                <p>"Success is the sum of small efforts repeated day in and day out."</p>
+                <span>- Robert Collier</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
